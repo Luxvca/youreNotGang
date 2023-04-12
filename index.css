@@ -26,9 +26,9 @@ body{
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
   .nav-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -48,13 +48,27 @@ body{
     max-width: 100%;
     text-align: center;
   }
-  nav ul {
+  /*nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: inline-block;
     
   }
+  */
+
+  
+  nav ul {
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+
+  }
+  
+
   nav li {
     display: inline-block;
     margin-right: 1em;
@@ -68,16 +82,13 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);*/
+    box-shadow: none;
+    border-top: 1px solid black; /* adds a line on top of nav bar */
+    border-bottom: 1px solid black; /* replaces drop shadow w/ a line */
   }
   
-  nav ul {
-    display: flex;
-    justify-content:center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+  
   
   nav li {
     padding: 10px;
