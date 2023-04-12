@@ -1,8 +1,24 @@
-body {
-    font-family: Monaco, monospace;
-    margin: 0;
-    padding: 0;
+
+@media only screen and (max-width: 768px){
+  body {
+    max-width: 100%;
   }
+}
+
+
+@media only screen and (max-width: 768px){
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+body{
+  font-family: Monaco, monospace;
+  margin: 0;
+  padding: 0;
+}
+    
    header {
     background-color: #333;
     color: #fff;
