@@ -50,7 +50,7 @@ html,body {
   }
   
   nav li {
-    display: inline-block;
+    display: block;
     margin-right: 1em;
     padding: 1%;
   }
