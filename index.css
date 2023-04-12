@@ -1,36 +1,12 @@
-
-@media only screen and (max-width: 768px){
-  body {
-    max-width: 100%;
-  }
-}
-
-
-@media only screen and (max-width: 768px){
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
 body{
   font-family: Monaco, monospace;
   margin: 0;
   padding: 0;
+  font-size: 1rem; /* Set font size to repsonsive unit */
 }
 
-@media only screen and (max-width: 768px){
-  .nav-container {
-    max-width: 100%;
-  }
-}
-
-
-@media only screen and (min-width: 768px){
-  .nav-container {
-    max-width: 100%;
-    margin: 0 auto;
-  }
+html,body {
+  overflow-x: hidden;
 }
 
    header {
@@ -38,6 +14,7 @@ body{
     color: #fff;
     text-align: center;
     padding: 1em;
+    max-width: 100%;
   }
   header h1 {
     margin: 1;
@@ -45,38 +22,11 @@ body{
   nav {
     background-color: #eee;
     padding: 0.5em;
-    max-width: 100%;
+    /*max-width: 100%;*/
     text-align: center;
-  }
-  /*nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    
-  }
-  */
-
-  
-  nav ul {
-    display: flex;
-    justify-content:center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
 
   }
-  
 
-  nav li {
-    display: inline-block;
-    margin-right: 1em;
-  }
-  nav a {
-    color: #333;
-    text-decoration: none;
-  }
   nav {
     background-color: white;
     margin: 0;
@@ -86,12 +36,23 @@ body{
     box-shadow: none;
     border-top: 1px solid black; /* adds a line on top of nav bar */
     border-bottom: 1px solid black; /* replaces drop shadow w/ a line */
+
   }
   
-  
+  nav ul {
+    display: block;
+    justify-content:center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+
+  }
   
   nav li {
-    padding: 10px;
+    display: inline-block;
+    margin-right: 1em;
+    padding: 1%;
   }
   
   nav a {
@@ -123,7 +84,6 @@ body{
   section {
     flex: 1;
     padding: 1em;
-    min-width: 600px;
   }
   section h2 {
     margin-top: 0;
@@ -143,3 +103,13 @@ body{
     bottom: 0;
     width: 100%;
   }
+
+@media only screen and (max-width: 600px){
+  header{
+      padding: 0.5em;
+  }
+  
+  nav{
+    padding: 0.5em;
+  }
+}
