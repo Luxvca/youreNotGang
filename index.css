@@ -18,7 +18,21 @@ body{
   margin: 0;
   padding: 0;
 }
-    
+
+@media only screen and (max-width: 768px){
+  .nav-container {
+    max-width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
    header {
     background-color: #333;
     color: #fff;
@@ -31,6 +45,7 @@ body{
   nav {
     background-color: #eee;
     padding: 0.5em;
+    max-width: 100%;
     text-align: center;
   }
   nav ul {
@@ -38,6 +53,7 @@ body{
     margin: 0;
     padding: 0;
     display: inline-block;
+    
   }
   nav li {
     display: inline-block;
