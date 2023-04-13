@@ -19,38 +19,68 @@ html,body {
   header h1 {
     margin: 1;
   }
-  nav {
-    background-color: #eee;
-    padding: 0.5em;
-    /*max-width: 100%;*/
-    text-align: center;
 
-  }
-
-  nav {
+  
+  .nav-container{
     background-color: white;
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
     width: 100%;
-    /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);*/
+    height: auto;
+    max-width: 100%;
+    text-align: center; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     box-shadow: none;
-    border-top: 1px solid black; /* adds a line on top of nav bar */
-    border-bottom: 1px solid black; /* replaces drop shadow w/ a line */
-
-  }
-  
-  nav ul {
-    display: block;
+    border-top: 1px solid black;  
+    border-bottom: 1px solid black;  
+    display: inline-block;
     justify-content:center;
     list-style-type: none;
+    margin: auto;
+  }
+
+ /* nav {
+    background-color: white;
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    border-top: 1px solid black; /* adds a line on top of nav bar 
+    border-bottom: 1px solid black; /* replaces drop shadow w/ a line 
+    display: inline-flex
+
+  } 
+  
+*/
+
+  nav ul {
+    display: inline-flex;
+    justify-content:center;
+    list-style-type: none;
+    margin: auto;
+    padding: 1%;
     max-width: 100%;
 
   }
+
+@media only screen and (min-device-width: 428px) and (max-device-width: 926px) and (-webkit-device-pixel-ratio: 3) {
+  /* CSS for iPhone 13 Pro Max */
+  nav ul {
+    display: inline-flex;
+    justify-content:center;
+    list-style-type: none;
+    margin: auto;
+    padding: 1%;
+    max-width: 100%;
+  }
+}
+  
+  
   
   nav li {
-    display: block;
+    display: inline-block;
     margin-right: 1em;
     padding: 1%;
   }
@@ -104,7 +134,7 @@ html,body {
     width: 100%;
   }
 
-@media only screen and (max-width: 600px){
+/*@media only screen and (max-width: 600px){
   header{
       padding: 0.5em;
   }
@@ -112,4 +142,4 @@ html,body {
   nav{
     padding: 0.5em;
   }
-}
+}*/
