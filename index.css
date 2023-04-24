@@ -10,34 +10,107 @@ html,body {
 }
 
    header {
-    background-color: #333;
+    background-color: #3d3d3d00;
     color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 0em;
+   
     max-width: 100%;
   }
   header h1 {
     margin: 1;
   }
 
+  nav ul {
+    display: inline-flex;
+    justify-content:left;
+    list-style-type: none;
+    margin: auto;
+    padding: 0%;
+    word-spacing: 2%;
+    max-width: 100%;
+
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 0em;
+    padding: 1%;
+    padding-right:20%;
+  }
   
+  nav a {
+    color: black;
+    text-decoration: none;
+  }
   .nav-container{
+    margin-left:12%;
     background-color: white;
-    margin: 0;
-    padding: 0.5em;
+    padding: 0em;
     width: 100%;
     height: auto;
     max-width: 100%;
-    text-align: center; 
+    text-align: left; 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     box-shadow: none;
-    border-top: 1px solid black;  
-    border-bottom: 1px solid black;  
+    
+    /*border-bottom: 1px solid black; */ 
     display: inline-block;
     justify-content:center;
     list-style-type: none;
-    margin: auto;
   }
+
+  .border{
+    border-top: 1px solid black; 
+    margin-bottom: 3%;
+    margin-bottom: 3%;
+  }
+
+  /* Class for Luca Logo Title container*/
+  .LeftTitle {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: -4%;
+    margin-top: -4%;
+  }
+
+  /*Fur Luca Logo Title*/
+  .FurTitle {
+    height: auto;
+    max-width: 40%;
+    display: inline-flex;
+  }
+
+  /* 2nd border (between navbar & Name "Luca Martinez"*/
+  .border2{
+    border-top: 1px solid black; 
+    margin-top: 3%;
+    margin-bottom: 3%;
+  
+  }
+
+
+    /*Name "Luca Martinez":*/
+    .AboutMe {
+      margin-left: 12%;
+      margin-top: 2%;
+      margin-bottom: 3%;
+      text-align: left;
+      max-width: 100%;
+  
+    }
+
+    /* Lux Yellow image*/
+    .Left {
+      text-align: left
+      margin-left: 12%;
+      
+    }  
+
+    .description{
+      text-align: left;
+      margin-left: 12%;
+    }
+
 
  /* nav {
     background-color: white;
@@ -55,15 +128,7 @@ html,body {
   
 */
 
-  nav ul {
-    display: inline-flex;
-    justify-content:center;
-    list-style-type: none;
-    margin: auto;
-    padding: 1%;
-    max-width: 100%;
 
-  }
 
 @media only screen and (min-device-width: 428px) and (max-device-width: 926px) and (-webkit-device-pixel-ratio: 3) {
   /* CSS for iPhone 13 Pro Max */
@@ -79,36 +144,33 @@ html,body {
   
   
   
-  nav li {
-    display: inline-block;
-    margin-right: 1em;
-    padding: 1%;
-  }
-  
-  nav a {
-    color: black;
-    text-decoration: none;
-  }
+
   
   main {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .AboutMe {
-    text-align: center;
-    max-width: 100%;
-  }
 
-  .LuxDorm img {
-   /* width: 400px; */
-   height: auto;
-   max-width: 60%;
-   display: block;
-  margin: 3% auto;
-  text-align: center;
-  vertical-align: middle;
+
+
+  .LuxYellow{
+    width: 30%;
+    height: auto;
+    text-align: left;
+    margin-left: 12%;
   }
+  /*.Lux img {
+   /* width: 400px; 
+   height: auto;
+   max-width: 25%;
+   display: flex;
+  margin: 3% auto;
+  text-align: left;
+  vertical-align: left;
+  }*/
+
+  
 
   
   section {
