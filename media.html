@@ -5,12 +5,12 @@
     <link rel="icon" type="image/x-icon" href="/imgs/karljr.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta charset="UTF-8">
-    <title>Media</title>
+    <title>work</title>
     <link rel="stylesheet" href="index.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--CSS for Media page-->
+<!--CSS for Work page-->
 <!-- STYLE -->
 <style>
     
@@ -180,6 +180,49 @@ img{
     
     max-width: 80%;
 }
+
+
+.projects-container {
+display: block;
+}
+
+.Project1 Img {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  float: left;
+  max-width: 50%;
+  height: auto;
+}
+
+.Project2 Img {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  float: left;
+  max-width: 40%;
+  height: auto;
+}
+.builder {
+  max-width: 20%;
+  height: auto;
+}
+.Project3 Img {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  float: left;
+  max-width: 40%;
+  height: auto;
+}
+.Project3 Img {
+  max-width: 45%;
+  height: auto;
+}
+
+.Project3title{
+  float: center;
+}
 </style>
 
 </head>
@@ -209,7 +252,7 @@ img{
             <nav>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="media.html">Media</a></li>
+                <li><a href="work.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
               </ul>
             </nav>
@@ -226,15 +269,60 @@ img{
 
 
 
-<p class="MediaTitle">Creative Media: </p>
+<p class="MediaTitle">Creative Work: </p>
 
-<!-- Illustrations accordion button -->
+<!-- Projects accordion button -->
 <button class="accordion">
-    <div class= "ButtonText" Illustrations>Illustrations
+  <div class= "ButtonText" Illustrations>Projects
+  </div>
+</button>
+  
+<!-- Projects Panel -->
+<div class="panel">
+
+<div class= "projects-container">
+      <h3>Santa Barbara Graphic & Cap</h3>
+      <p>Designed Santa Barbara graphic. Printed to fabric the summer before I started at UCSB.</p>
+      <div class = "Project1 Img"> 
+        <img src="/imgs/SBlogo.png">
+        <img src="/imgs/sbHatCollage.png">
+      </div>
+
+      <h3>"Mort" for Muse</h3>
+      <p>Designed 3D main character for metaverse website startup: <a href="https://muse.place" target=”_blank”>Muse</a></p>
+
+      
+
+      <div class = "Project2 Img"> 
+        <img src="/imgs/MuseBuilderPlacement.png">
+      </div>
+      <div>
+        <img class = "builder" src="/imgs/MuseBuilder.png">
+      </div>
+      
+
+      
+      
+      <div class = "Project3title"> 
+      <h3> Main logo for <a href="https://muse.place" target=”_blank”>Mutual Funds Magazine</a></h3>
+      
+    </div>
+    
+      <div class = "Project3 Img"> 
+        
+        <img src="/imgs/MutualFundsMagazine Logo.png">
+      </div>
+</div>
+</div>
+
+<!-- Artwork accordion button -->
+<button class="accordion">
+    <div class= "ButtonText" Illustrations>Artwork
 
     </div>
 </button>
 
+<!-- Artwork Panel -->
 <div class="panel">
     <p>Digital Procreate Art 2023</p>
    
@@ -266,33 +354,31 @@ img{
     </div>
       
 </div>
-<!-- 3D accordion button -->
+
+
+<!-- Graphics accordion button -->
 <button class="accordion">
-    <div class= "ButtonText" Illustrations>3D
+    <div class= "ButtonText" Illustrations>Graphics
     </div>
 </button>
 
-<!-- 3D Panel -->
+<!-- Graphics Panel -->
 <div class="panel">
   <p> 3D art and animation </p>
   <div class="ThreeD-container">
-    <div class = "ThreeD"> <img src="/imgs/3D/PushinP.png" alt="Pushin P" onclick="openFullscreen(this)">
+    <div class = "ThreeD"> <img src="/imgs/LuxMediaScreenshot.png">
     </div>
+    <!--<div class = "ThreeD"> <img src="/imgs/3D/PushinP.png" alt="Pushin P" onclick="openFullscreen(this)"> 
+    </div>-->
+
+  <div class = "ThreeD"> <img src="/imgs/3D/FuzzyDiceShadow.png">
   </div>
-  
+  <div class = "ThreeD"> <img src="/imgs/3D/TopViewFuzzyDice.PNG">
+  </div>
+  </div></div>
 </div>
 
-
-<!-- Photography accordion button -->
-<button class="accordion">
-    <div class= "ButtonText" Illustrations>Photography
-    </div>
-</button>
-    
-    <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
+      
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
